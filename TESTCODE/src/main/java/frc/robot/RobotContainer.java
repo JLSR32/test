@@ -69,8 +69,9 @@ public class RobotContainer
 
     new JoystickButton(gamepad, 6)
     .whenPressed(new InstantCommand(() -> m_lifter.toggleInvert()));
+    
     //new JoystickButton(gamepad, 0)//leftStick, 2)//diff button ? 
-    //.whenPressed(new StartEndCommand(() -> m_lifter.climb_Down(.5), () -> m_lifter.climb_Down(0), m_lifter));
+    //.whenPressed(new StartEndCommand(() -> m_lifter.climb_Down(-.5), () -> m_lifter.climb_Down(0), m_lifter));
 
     
 

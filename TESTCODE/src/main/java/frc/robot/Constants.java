@@ -19,11 +19,11 @@ public final class Constants
     public final static int BACKL = 2; 
     public final static int BACKR = 3; 
 
-    public final static int SPARKUP = 0;
+    public final static int SPARKUP = 9;
 
-    public final static int LEFTLIFT = 0;
-    public final static int RIGHTLIFT = 1;
+    public final static int LEFTLIFT = 4;
+    public final static int RIGHTLIFT = 5;
 
-    public final static int S1 = 1; 
+    public final static int S1 = 6; 
 
 }

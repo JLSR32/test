@@ -24,10 +24,10 @@ public class lifter extends SubsystemBase {
 
   public lifter() 
   {
-    //liftL = new CANSparkMax(Constants.LEFTLIFT, MotorType.kBrushless);
-    //liftR = new CANSparkMax(Constants.RIGHTLIFT, MotorType.kBrushless); 
+    liftL = new CANSparkMax(Constants.LEFTLIFT, MotorType.kBrushless);
+    liftR = new CANSparkMax(Constants.RIGHTLIFT, MotorType.kBrushless); 
   
-    //pull = new MotorControllerGroup(liftL, liftR);
+    pull = new MotorControllerGroup(liftL, liftR);
 
     UP = new Spark(Constants.SPARKUP);
   }
@@ -41,7 +41,7 @@ public class lifter extends SubsystemBase {
 
   public void climb_Down(double speed)
   {
-    //this.pull.set(speed); 
+    this.pull.set(speed); 
     this.UP.set(speed);
   }    
 
